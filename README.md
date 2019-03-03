@@ -42,7 +42,7 @@ const webpackConfig = {
         test: /\.css$/,
         use: [
           { loader: "style-loader" },
-+          { loader: "strict-module-loader" },
++          { loader: "strict-css-modules-loader" },
           { loader: "css-loader", options: { modules: true } }
         ]
       }
