@@ -1,14 +1,14 @@
-# ∉ strict-css-module-loader
+# ∉ strict-css-modules-loader
 
 [CSS Modules](https://github.com/css-modules/css-modules) lets you access a `styles` object, to access a localised class name.
 
 The problem is `styles['this-style-does-not-exist']` will silently return `undefined`. Often you only refer to a non-existent style if you have written a typo, or forgotten to update another file, after removing a style.
 
-This loader wraps your `styles` object in a proxy to warn you when accessing non-existent styles.
+[strict-css-modules-loader] wraps your `styles` object in a proxy to warn you when accessing non-existent styles.
 
 ```javascript
 var x = styles["this-does-not-exist"];
-// error: [strict-css-module-loader] The CSS class "this-does-not-exist" does not exist in /path/my-css.css!
+// error: [strict-css-modules-loader] The CSS class "this-does-not-exist" does not exist in /path/my-css.css!
 
 console.log(x);
 // log: `undefined`
@@ -17,18 +17,18 @@ console.log(x);
 ## Install
 
 ```bash
-npm install --save-dev strict-css-module-loader
+npm install --save-dev strict-css-modules-loader
 ```
 
 or
 
 ```bash
-yarn add -D strict-css-module-loader
+yarn add -D strict-css-modules-loader
 ```
 
 ## Requirements
 
-SMP requires at least **Node v4**.
+[strict-css-modules-loader] requires at least **Node v4**.
 
 ## Usage
 

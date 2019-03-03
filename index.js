@@ -25,7 +25,7 @@ module.exports = function(content, map, meta) {
               .map(function(k) { return ' - "' + k + '"' })
               .join('\\n');
             console.error(
-              '%c[strict-css-module-loader]',
+              '%c[strict-css-modules-loader]',
               'background: red; color: white',
               'The CSS class "' + prop.toString() + '" does not exist in ${
                 this.resourcePath
@@ -34,7 +34,7 @@ module.exports = function(content, map, meta) {
         },
         set: function(obj, prop, value) {
           console.error(
-            '%c[strict-css-module-loader]',
+            '%c[strict-css-modules-loader]',
             'background: red; color: white',
             'There should be no good reason to set the styles of ${
               this.resourcePath
