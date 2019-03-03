@@ -1,11 +1,8 @@
 {
   "name": "strict-css-module-loader",
   "version": "0.0.1",
-  "description": "Wrap your CSS module objects in a proxy object, to warn if you attempt to access a non-existent style-name",
+  "description": "Wrap your CSS Modules objects in a proxy object, to warn if you attempt to access a non-existent style-name",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "webpack",
     "css",
