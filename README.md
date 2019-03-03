@@ -4,7 +4,7 @@
 
 The problem is `styles['this-style-does-not-exist']` will silently return `undefined`. Often you only refer to a non-existent style if you have written a typo, or forgotten to update another file, after removing a style.
 
-[strict-css-modules-loader] wraps your `styles` object in a proxy to warn you when accessing non-existent styles.
+**[strict-css-modules-loader]** wraps your `styles` object in a proxy to warn you when accessing non-existent styles.
 
 ```javascript
 var x = styles["this-does-not-exist"];
@@ -28,7 +28,7 @@ yarn add -D strict-css-modules-loader
 
 ## Requirements
 
-[strict-css-modules-loader] requires at least **Node v4**.
+**[strict-css-modules-loader]** requires at least **Node v4**.
 
 ## Usage
 
