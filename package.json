@@ -13,6 +13,7 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "author": "Stephen Cook",
+  "author": "Thread",
+  "private": false,
   "license": "MIT"
 }
