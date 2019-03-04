@@ -6,16 +6,16 @@ module.exports = function(content, map, meta) {
     return;
   }
 
-  var newContent = content.replace(/exports.locals = /, "var rawLocals = ");
+  var newContent = content.replace(/module.exports = /, "var rawLocals = ");
   newContent += `
     // IE 11 etc. cannot use Proxy
-    var canUseProxy = window.Proxy && window.Proxy.constructor;
+    var canUseProxy = typeof Proxy !== "undefined" && Proxy.constructor;
 
     // we skip at the build and the runtime level, to not include this loader in
     // production mode, regardless of how the developer is defining "production mode"
     var shouldUseProxy = process.env.NODE_ENV !== "production";
 
-    exports.locals = canUseProxy && shouldUseProxy
+    module.exports = canUseProxy && shouldUseProxy
       ? new Proxy(rawLocals, {
         get: function(obj, prop) {
           if(obj.hasOwnProperty(prop) || prop === '__esModule') { return obj[prop]; }

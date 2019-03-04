@@ -1,6 +1,6 @@
 {
   "name": "strict-css-modules-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wrap your CSS Modules objects in a proxy object, to warn if you attempt to access a non-existent style-name",
   "main": "index.js",
   "keywords": [
