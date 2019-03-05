@@ -1,8 +1,12 @@
 {
-  "name": "strict-css-modules-loader",
-  "version": "0.0.2",
+  "name": "@teamthread/strict-css-modules-loader",
+  "version": "0.0.3",
   "description": "Wrap your CSS Modules objects in a proxy object, to warn if you attempt to access a non-existent style-name",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thread/strict-css-modules-loader.git"
+  },
   "keywords": [
     "webpack",
     "css",

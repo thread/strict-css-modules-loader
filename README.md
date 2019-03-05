@@ -17,13 +17,13 @@ console.log(x);
 ## Install
 
 ```bash
-npm install --save-dev strict-css-modules-loader
+npm install --save-dev @teamthread/strict-css-modules-loader
 ```
 
 or
 
 ```bash
-yarn add -D strict-css-modules-loader
+yarn add -D @teamthread/strict-css-modules-loader
 ```
 
 ## Requirements
@@ -41,7 +41,7 @@ const webpackConfig = {
       {
         test: /\.css$/,
         use: [
-+          { loader: "strict-css-modules-loader" },
++          { loader: "@teamthread/strict-css-modules-loader" },
           { loader: "style-loader" },
           { loader: "css-loader", options: { modules: true } }
         ]
